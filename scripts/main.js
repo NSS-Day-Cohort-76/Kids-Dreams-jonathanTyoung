@@ -1,6 +1,6 @@
-import { Pairings } from "./Pairings.js"
-import { Celebrities } from "./CelebrityList.js"
-import { Kids } from "./Kids.js"
+import { pairings } from "./pairings.js"
+import { celebrities } from "./celebrityList.js"
+import { kids } from "./kids.js"
 
 const mainContainer = document.querySelector("#container")
 
@@ -9,16 +9,17 @@ const applicationHTML = `
     <article class="details">
         <section class="detail--column list details__kids">
             <h2>Kids</h2>
-            ${Kids()}
+            ${kids()}
         </section>
         <section class="detail--column details__celebrities">
             <h2>Celebrities</h2>
-            ${Celebrities()}
+            ${celebrities()}
         </section>
     </article>
 
     <article class="assignments">
-        <h2>Pairings</h2>
+    <h2>Pairings</h2>
+        <h2>${pairings()}</h2>
     </article>
 `
 
