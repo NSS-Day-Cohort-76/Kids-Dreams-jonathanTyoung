@@ -35,10 +35,13 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   > Your answer here: The module that contains the code for this clickEvent is in the kids.js module. The document.addEventListener gets invoked/called in the DOM when some HTML belonging to the "child" datatype is clicked on. What the DOM calls in the function belongs to the state of this particular datatype.
+
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > Your answer here: The `findCelebrityMatch()` function must be invoked here because within its declaration, the function is having a return value that matches a celebrity to a child. That value is what is returned when the function is invoked. And that value is also necessary information, not so much for the ForLoop itself, but the string literal found within the ForLoop, specifically in the interpolations that need the celebrity name and sport.
+
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   > Your answer here: In the celebrityList module, there is state belonging to the "celebrity" datatype that contains the interpolation of the celeb's sport. Later in the module I define a variable with this piece of state, include the variable's interpolation into the HTML's string literal, and this produces the sport name of the celebrity when the name gets clicked on. 
+
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   > Your answer here: In the main module there are three functions getting imported from their respective modules. Each function contains HTML string literals. This HTML, after imported into 'main' is getting rendered to the DOM through by means of the .innerHTML property of the DOM, which is getting and converting the information for the web browser.

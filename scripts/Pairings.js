@@ -22,13 +22,11 @@ export const pairings = () => {
 
     for (const kid of kids) {
         const celebrity = findCelebrityMatch(kid, celebrities)
-        
-        if (celebrity){
         html += `<li>
                     ${kid.name} will be making memories with ${celebrity.name}, a ${celebrity.sport} star, by ${kid.wish}
                 </li>
         `
-    }}
+    }
 
     html += "</ul>"
 
